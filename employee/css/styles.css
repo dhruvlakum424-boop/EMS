@@ -1,0 +1,144 @@
+/* ===== COMMON EMPLOYEE SIDEBAR / NAVBAR ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+:root {
+    --accent-color: #3498db;
+    --white: #ffffff;
+}
+
+body {
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+    width: 260px;
+    background-color: #1a2a3a;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar-header h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4db8ff;
+    letter-spacing: 1px;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+    list-style: none;
+    flex-grow: 1;
+}
+
+.nav-links li {
+    margin-bottom: 8px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cbd5e0;
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative; /* important for ::before */
+}
+
+.nav-links a i {
+    width: 25px;
+    font-size: 18px;
+}
+
+/* HOVER */
+.nav-links a:hover {
+    background-color: rgba(52, 152, 219, 0.15);
+    color: var(--white);
+}
+
+/* ACTIVE */
+.nav-links a.active {
+    background-color: rgba(52, 152, 219, 0.22);
+    color: var(--white);
+    font-weight: 600;
+}
+
+/* LEFT ACTIVE BAR */
+.nav-links a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--accent-color);
+    border-radius: 4px 0 0 4px;
+}
+
+/* ===== LOGOUT ===== */
+.logout-item {
+    margin-top: auto;
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+}
+
+.logout-item a {
+    color: #ff7675;
+}
+
+.logout-item a:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    margin-left: 260px;
+}
+
+/* ===== TOP HEADER ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        padding: 10px;
+    }
+
+    .sidebar-header h3,
+    .nav-links span {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 70px;
+    }
+}

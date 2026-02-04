@@ -1,0 +1,161 @@
+
+        /* AAPKA PHELE WALA ORIGINAL CSS */
+        
+        .main-content {
+            flex: 1;
+            margin-left: 260px;
+            padding: 25px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .salary-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            min-width: 600px;
+        }
+
+        table th,
+        table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        table th {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+        }
+
+        .btn-save {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-save:hover {
+            background-color: #219150;
+        }
+
+        .status-paid {
+            color: #27ae60;
+            font-weight: bold;
+            background: #e9f7ef;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+        }
+        /* Custom DataTable Styling */
+.dataTables_wrapper {
+    padding: 10px 0;
+}
+
+/* Search Box aur Length Menu (Entries) ko modern banayein */
+.dataTables_filter input, .dataTables_length select {
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    padding: 6px 10px !important;
+    margin-bottom: 15px;
+}
+
+/* Table Header ka design */
+table.dataTable thead th {
+    background-color: #f8f9fa !important;
+    color: #2c3e50 !important;
+    border-bottom: 2px solid #eee !important;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Row hover effect */
+table.dataTable tbody tr:hover {
+    background-color: #f1f4f9 !important;
+    transition: 0.2s ease;
+}
+
+/* Pagination Buttons styling */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 12px !important;
+    margin-left: 5px !important;
+    border-radius: 4px !important;
+    border: 1px solid #ddd !important;
+    background: white !important;
+    color: #333 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #3498db !important;
+    color: white !important;
+    border: 1px solid #3498db !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f8f9fa !important;
+    color: #3498db !important;
+}
+
+/* Table info text (Showing 1 to X entries) */
+.dataTables_info {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 15px;
+}

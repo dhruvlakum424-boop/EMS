@@ -1,0 +1,151 @@
+
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            margin-left: 260px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            padding: 15px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .salary-section {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .salary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table th {
+            background-color: #f8f9fa;
+            color: #555;
+            text-align: left;
+            padding: 15px;
+            border-bottom: 2px solid #edf2f7;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        table td {
+            padding: 15px;
+            border-bottom: 1px solid #edf2f7;
+            color: #444;
+            font-size: 14px;
+        }
+
+        .amount {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .deduction {
+            color: #e74c3c;
+        }
+
+        .net-pay {
+            color: #27ae60;
+            font-weight: 800;
+            font-size: 15px;
+        }
+
+        .btn-download {
+            background-color: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-download:hover {
+            background-color: #2980b9;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        tr:hover {
+            background-color: #fcfcfc;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        /* Custom DataTable Styling */
+.dataTables_wrapper {
+    padding: 10px 0;
+}
+
+/* Search Box aur Length Menu (Entries) ko modern banayein */
+.dataTables_filter input, .dataTables_length select {
+    border: 1px solid #ddd !important;
+    border-radius: 5px !important;
+    padding: 6px 10px !important;
+    margin-bottom: 15px;
+}
+
+/* Table Header ka design */
+table.dataTable thead th {
+    background-color: #f8f9fa !important;
+    color: #2c3e50 !important;
+    border-bottom: 2px solid #eee !important;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+/* Row hover effect */
+table.dataTable tbody tr:hover {
+    background-color: #f1f4f9 !important;
+    transition: 0.2s ease;
+}
+
+/* Pagination Buttons styling */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 5px 12px !important;
+    margin-left: 5px !important;
+    border-radius: 4px !important;
+    border: 1px solid #ddd !important;
+    background: white !important;
+    color: #333 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #3498db !important;
+    color: white !important;
+    border: 1px solid #3498db !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f8f9fa !important;
+    color: #3498db !important;
+}
+
+/* Table info text (Showing 1 to X entries) */
+.dataTables_info {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-top: 15px;
+}
