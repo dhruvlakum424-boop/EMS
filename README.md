@@ -45,7 +45,7 @@ Employees apne account se niche diye gaye kaam kar sakte hain:
     ```
 2.  **Database Setup**:
     * Create a database: `employee_management_system`
-    * Import the provided `.sql` file.
+    * Import the provided `sql query`:
 3.  **Config**: Update your database connection details in `config.php`.
 4.  **Run**: Open in XAMPP/WAMP (localhost).
 
