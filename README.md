@@ -44,7 +44,7 @@ Employees apne account se niche diye gaye kaam kar sakte hain:
     git clone [https://github.com/dhruvlakum424-boop/EMS.git]
     ```
 2.  **Database Setup**:
-    * Create a database: `ems_db`
+    * Create a database: `employee_management_system`
     * Import the provided `.sql` file.
 3.  **Config**: Update your database connection details in `config.php`.
 4.  **Run**: Open in XAMPP/WAMP (localhost).
